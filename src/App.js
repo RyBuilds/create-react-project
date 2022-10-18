@@ -1,21 +1,15 @@
 import { Route, Switch } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import PageOne from "./pages/PageOne";
-import PageTwo from "./pages/PageTwo";
+import MainNavigation from "./components/layout/MainNavigation";
 
 function App() {
   return (
     <div>
+      <MainNavigation />
       <Switch>
         <Route exact path="/">
-          <HomePage />
+          {/* homepage component */}
         </Route>
-        <Route path="PageOne">
-          <PageOne />
-        </Route>
-        <Route path="PageTwo">
-          <PageTwo />
-        </Route>
+        <Route path="/page">{/* page component */}</Route>
       </Switch>
     </div>
   );
