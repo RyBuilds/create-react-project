@@ -6,8 +6,8 @@ function App() {
     <div>
       <MainNavigation />
       <Routes>
-        <Route path="/" element={} />
-        <Route path='/page' element={}} />
+        {/* <Route path="/" element={} /> */}
+        {/* <Route path='/page' element={}} /> */}
       </Routes>
     </div>
   );
